@@ -542,15 +542,28 @@ function initImageUpload() {
  * @param {string} projectId - The project ID to delete
  */
 function openDeleteModal(projectId) {
-    document.getElementById('delete-project-id').value = projectId;
-    document.getElementById('delete-modal').classList.remove('hidden');
+    console.log('Opening delete modal for project:', projectId);
+    const modal = document.getElementById('delete-modal');
+    const hiddenInput = document.getElementById('delete-project-id');
+    
+    if (!modal || !hiddenInput) {
+        console.error('Delete modal elements not found');
+        showToast('Error: Delete modal not found', 'error');
+        return;
+    }
+    
+    hiddenInput.value = projectId;
+    modal.classList.remove('hidden');
 }
 
 /**
  * Close delete confirmation modal
  */
 function closeDeleteModal() {
-    document.getElementById('delete-modal').classList.add('hidden');
+    const modal = document.getElementById('delete-modal');
+    if (modal) {
+        modal.classList.add('hidden');
+    }
 }
 
 /**
@@ -559,9 +572,15 @@ function closeDeleteModal() {
 async function confirmDelete() {
     const projectId = document.getElementById('delete-project-id').value;
     
+    if (!projectId) {
+        showToast('No project selected for deletion', 'error');
+        return;
+    }
+    
     try {
         const response = await fetch(`/api/projects/${projectId}`, {
-            method: 'DELETE'
+            method: 'DELETE',
+            credentials: 'same-origin'
         });
         
         if (response.ok) {
@@ -570,12 +589,25 @@ async function confirmDelete() {
             loadProjects();
             loadStats();
         } else {
-            const data = await response.json();
-            showToast(data.error || 'Failed to delete project', 'error');
+            let errorMessage = 'Failed to delete project';
+            try {
+                const data = await response.json();
+                errorMessage = data.error || errorMessage;
+            } catch (e) {
+                // Response may not be JSON
+            }
+            
+            if (response.status === 401) {
+                showToast('Session expired. Please login again.', 'error');
+                setTimeout(() => window.location.href = '/admin', 2000);
+                return;
+            }
+            
+            showToast(errorMessage, 'error');
         }
     } catch (error) {
         console.error('Delete error:', error);
-        showToast('Failed to delete project', 'error');
+        showToast('Failed to delete project. Check your connection.', 'error');
     }
 }
 
@@ -683,19 +715,33 @@ async function deleteSkill(skillName) {
     
     try {
         const response = await fetch(`/api/skills/${encodeURIComponent(skillName)}`, {
-            method: 'DELETE'
+            method: 'DELETE',
+            credentials: 'same-origin'
         });
         
         if (response.ok) {
             await loadSkillsSection();
             showToast('Skill deleted successfully', 'success');
         } else {
-            const data = await response.json();
-            showToast(data.error || 'Failed to delete skill', 'error');
+            let errorMessage = 'Failed to delete skill';
+            try {
+                const data = await response.json();
+                errorMessage = data.error || errorMessage;
+            } catch (e) {
+                // Response may not be JSON
+            }
+            
+            if (response.status === 401) {
+                showToast('Session expired. Please login again.', 'error');
+                setTimeout(() => window.location.href = '/admin', 2000);
+                return;
+            }
+            
+            showToast(errorMessage, 'error');
         }
     } catch (error) {
         console.error('Error deleting skill:', error);
-        showToast('Failed to delete skill', 'error');
+        showToast('Failed to delete skill. Check your connection.', 'error');
     }
 }
 
@@ -1165,3 +1211,18 @@ function escapeHtml(text) {
     div.textContent = text;
     return div.innerHTML;
 }
+
+// ===================================
+// Expose functions to global scope for onclick handlers
+// ===================================
+window.openDeleteModal = openDeleteModal;
+window.closeDeleteModal = closeDeleteModal;
+window.confirmDelete = confirmDelete;
+window.deleteSkill = deleteSkill;
+window.editProject = editProject;
+window.openProjectModal = openProjectModal;
+window.closeProjectModal = closeProjectModal;
+window.saveProject = saveProject;
+window.showSection = showSection;
+window.toggleSidebar = toggleSidebar;
+window.logout = logout;
