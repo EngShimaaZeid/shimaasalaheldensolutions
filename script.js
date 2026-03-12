@@ -64,18 +64,18 @@ const fallbackProjects = [
         link: "https://shimaasalahelden19.wixsite.com/drasmaahammad"
     },
     {
-        title: "Liverpool FC Fan Website",
-        description: "A dynamic React-based website dedicated to Liverpool Football Club fans, featuring news, match updates, and team information.",
-        image: "https://images.unsplash.com/photo-1522778119026-d647f0596c20?w=600&h=400&fit=crop",
-        technologies: ["React", "JavaScript", "CSS3", "API"],
-        link: "https://liverpool-react.netlify.app/"
-    },
-    {
         title: "Al Nur Sprouts School",
         description: "An educational institution website with a modern and engaging design, providing information about programs, admissions, and school activities.",
         image: "https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=600&h=400&fit=crop",
         technologies: ["HTML5", "CSS3", "JavaScript", "SEO"],
         link: "https://alnursproutsschool.netlify.app/"
+    },
+    {
+        title: "Lower Website",
+        description: "a dedicated legal firm offering expert legal advice, contract drafting, and litigation services to support your business and personal legal needs.",
+        image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop",
+        technologies: ["HTML5", "SEO", "Wix"],
+        link: "https://shimaasalahelden19.wixsite.com/eldemardash"
     }
 ];
 
