@@ -1,0 +1,26 @@
+{
+  "theme": {
+    "primaryColor": "#6C2F4E",
+    "secondaryColor": "#5B5A3C",
+    "accentColor": "#9A7C7C",
+    "backgroundColor": "#E0DCD9",
+    "whiteColor": "#9A7C7C",
+    "primaryColorHover": "#925574",
+    "secondaryColorHover": "#818062"
+  },
+  "contact": {
+    "email": "shimaazeid13@gmail.com",
+    "phone": "+20 1514199165",
+    "whatsapp": "+201514199165",
+    "linkedin": "https://linkedin.com/in/shimaa-zeid-96a555321",
+    "github": "https://github.com/EngShimaaZeid",
+    "location": "Egypt"
+  },
+  "profile": {
+    "name": "Dr. Shimaa Zeid",
+    "title": "Web Developer & SEO Specialist",
+    "yearsExperience": "15+",
+    "projectsCompleted": "50+"
+  },
+  "updatedAt": "2026-03-12T12:05:16.311Z"
+}

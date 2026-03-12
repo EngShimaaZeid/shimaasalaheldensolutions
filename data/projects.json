@@ -1,0 +1,158 @@
+[
+  {
+    "id": "1",
+    "title": "Digital Marketing Agency",
+    "description": "My professional digital marketing website offering comprehensive SEO, social media marketing, and web development services to help businesses grow online.",
+    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop",
+    "technologies": [
+      "Wix",
+      "SEO",
+      "Digital Marketing",
+      "Branding"
+    ],
+    "link": "https://shimaasalahelden19.wixsite.com/eldemardash/%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%D9%86%D8%A7",
+    "featured": true,
+    "order": 0,
+    "createdAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": "2",
+    "title": "AI Gen-Z Style Todo List",
+    "description": "A modern, AI-inspired todo list application with beautiful animations and a clean dark theme interface for managing tasks efficiently.",
+    "image": "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop",
+    "technologies": [
+      "HTML5",
+      "CSS3",
+      "JavaScript"
+    ],
+    "link": "https://aigenzstyletodolist.netlify.app/",
+    "featured": false,
+    "order": 1,
+    "createdAt": "2024-01-02T00:00:00.000Z"
+  },
+  {
+    "id": "3",
+    "title": "Farming Company Website",
+    "description": "A professional website for an agricultural company showcasing their services, products, and commitment to sustainable farming practices.",
+    "image": "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?w=600&h=400&fit=crop",
+    "technologies": [
+      "HTML5",
+      "CSS3",
+      "Bootstrap",
+      "SEO"
+    ],
+    "link": "https://farmingcompany.netlify.app/",
+    "featured": false,
+    "order": 2,
+    "createdAt": "2024-01-03T00:00:00.000Z"
+  },
+  {
+    "id": "4",
+    "title": "AI Boho Style Todo List",
+    "description": "An elegant todo list application featuring a beautiful bohemian aesthetic design with warm colors and artistic elements.",
+    "image": "https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=600&h=400&fit=crop",
+    "technologies": [
+      "HTML5",
+      "CSS3",
+      "JavaScript"
+    ],
+    "link": "https://aibohostyletpdplist.netlify.app/",
+    "featured": false,
+    "order": 3,
+    "createdAt": "2024-01-04T00:00:00.000Z"
+  },
+  {
+    "id": "5",
+    "title": "Engineering Website",
+    "description": "A fully responsive professional engineering website built with Bootstrap framework, featuring clean design and modern layouts.",
+    "image": "https://images.unsplash.com/photo-1517180102446-f3ece451e9d8?w=600&h=400&fit=crop",
+    "technologies": [
+      "Bootstrap",
+      "HTML5",
+      "CSS3",
+      "JavaScript"
+    ],
+    "link": "https://bootstrapwsite.netlify.app/",
+    "featured": false,
+    "order": 4,
+    "createdAt": "2024-01-05T00:00:00.000Z"
+  },
+  {
+    "id": "6",
+    "title": "AI Modern Todo List",
+    "description": "A sleek and modern todo list application with AI-inspired design elements and intuitive user experience for productivity.",
+    "image": "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=600&h=400&fit=crop",
+    "technologies": [
+      "HTML5",
+      "CSS3",
+      "JavaScript"
+    ],
+    "link": "https://aimoderntodolist.netlify.app/",
+    "featured": false,
+    "order": 5,
+    "createdAt": "2024-01-06T00:00:00.000Z"
+  },
+  {
+    "id": "7",
+    "title": "Dr. Asmaa Hammad Portfolio",
+    "description": "A professional portfolio website showcasing medical expertise and services with elegant design and comprehensive information.",
+    "image": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&h=400&fit=crop",
+    "technologies": [
+      "Wix",
+      "Web Design",
+      "SEO"
+    ],
+    "link": "https://shimaasalahelden19.wixsite.com/drasmaahammad",
+    "featured": false,
+    "order": 6,
+    "createdAt": "2024-01-07T00:00:00.000Z"
+  },
+  {
+    "id": "8",
+    "title": "Liverpool FC Fan Website",
+    "description": "A dynamic React-based website dedicated to Liverpool Football Club fans, featuring news, match updates, and team information.",
+    "image": "https://images.unsplash.com/photo-1522778119026-d647f0596c20?w=600&h=400&fit=crop",
+    "technologies": [
+      "React",
+      "JavaScript",
+      "CSS3",
+      "API"
+    ],
+    "link": "https://liverpool-react.netlify.app/",
+    "featured": false,
+    "order": 7,
+    "createdAt": "2024-01-08T00:00:00.000Z"
+  },
+  {
+    "id": "9",
+    "title": "Al Nur Sprouts School",
+    "description": "An educational institution website with a modern and engaging design, providing information about programs, admissions, and school activities.",
+    "image": "https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=600&h=400&fit=crop",
+    "technologies": [
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "SEO"
+    ],
+    "link": "https://alnursproutsschool.netlify.app/",
+    "featured": false,
+    "order": 8,
+    "createdAt": "2024-01-09T00:00:00.000Z"
+  },
+  {
+    "id": "1773312654177",
+    "title": "Lower Website",
+    "description": "a dedicated legal firm offering expert legal advice, contract drafting, and litigation services to support your business and personal legal needs.",
+    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop",
+    "technologies": [
+      "HTML5",
+      "SEO",
+      "Wix"
+    ],
+    "link": "https://shimaasalahelden19.wixsite.com/eldemardash",
+    "featured": false,
+    "order": 9,
+    "createdAt": "2026-03-12T10:50:54.180Z",
+    "updatedAt": "2026-03-12T12:22:19.754Z"
+  }
+]
